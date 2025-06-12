@@ -8,7 +8,7 @@ metadata:
     opendatahub.io/accelerator-name: ""
     openshift.io/description: ""
     openshift.io/display-name: sarcasm-workbench
-    notebooks.opendatahub.io/last-image-selection: "s2i-generic-data-science-notebook:2024.2"
+    notebooks.opendatahub.io/last-image-selection: "tensorflow:2024.2"
     argocd.argoproj.io/sync-options: ServerSideApply=true
   name: sarcasm-workbench
   namespace: sarcasm-detection
@@ -18,7 +18,7 @@ spec:
       affinity: {}
       containers:
         - name: sarcasm-workbench
-          image: "image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/s2i-generic-data-science-notebook:2024.2"
+          image: "image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/tensorflow:2024.2"
           resources:
             limits:
               cpu: "2"
@@ -56,7 +56,7 @@ spec:
                 --ServerApp.quit_button=False
                 --ServerApp.tornado_settings={"user":"user1","hub_host":"","hub_prefix":"/projects/sarcasm-detection"}
             - name: JUPYTER_IMAGE
-              value: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/s2i-generic-data-science-notebook:2024.2'
+              value: 'image-registry.openshift-image-registry.svc:5000/redhat-ods-applications/tensorflow:2024.2'
             - name: REQUESTS_CA_BUNDLE
               value: /etc/pki/tls/custom-certs/ca-bundle.crt
             - name: SSL_CERT_FILE

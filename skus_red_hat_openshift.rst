@@ -14,13 +14,16 @@ SKU OCP
 .. list-table::
    :widths: auto
 
-   * - MCP0001
+   * - Red Hat Openshift Container Platform
+     - MCP0001
      - 32 vcpus
      - 23000 USD
-   * - MCP0002
+   * - Red Hat Openshift Container Platform
+     - MCP0002
      - 64 vcpus
      - 46000 USD
-   * - MCP0003
+   * - Red Hat Openshift Container Platform
+     - MCP0003
      - 128 vcpus
      - 92000 USD
 

@@ -13,7 +13,12 @@ SKU OCP
 
 .. list-table::
    :widths: auto
+   :header-rows: 1
 
+   * - Product
+     - SKU
+     - vcpus
+     - Price
    * - Red Hat Openshift Container Platform
      - MCP0001
      - 32 vcpus
